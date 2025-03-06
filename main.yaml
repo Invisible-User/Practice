@@ -1,6 +1,6 @@
 - name: use variables
   hosts: localhost
-  vars_file:
+  var_file:
     - secrets.yaml
   tasks:
     - name: use variables 
