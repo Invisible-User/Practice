@@ -1,0 +1,8 @@
+- name: use variables
+  hosts: localhost
+  vars_file:
+  - secrets.yaml
+  tasks:
+  - name: use variables 
+    debug:
+      msg: the username is {{user_name}}, password is {{db_password}}
